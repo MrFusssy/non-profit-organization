@@ -1,0 +1,271 @@
+/*----------------*\
+    #stle.css
+\*----------------*/
+
+/**
+* copyright 2023 codebychua
+*/
+
+
+
+
+
+/*-------------------------------*\
+    #CUSTOM PROPERTY
+\*-------------------------------*/
+
+:root {
+
+    /**
+    * colors
+    */
+
+    --bright-yellow-crayola: hsl(40, 100%, 50%);
+    --medium-turquoise: hsl(172, 48%, 59%);
+    --silver-chalice: hsl(0, 0%, 70%);
+    --eerie-black-1: hsl(0, 0%, 13%);
+    --eerie-black-2: hsl(0, 0%, 15%);
+    --eerie-black-3: hsl(228, 10%, 20%);
+    --raisin-black: hsl(220, 8%, 14%);
+    --granite-gray: hsl(0, 0%, 38%);
+    --sonic-silver: hsl(0, 0%, 47%);
+    --pistachio-50: hsla(86, 45%, 54%, 0.5);
+    --baby-powder: hsl(86, 41%, 97%);
+    --light-gray: hsl(0, 0%, 80%);
+    --pistachio: hsl(86, 45%, 54%);
+    --platinum: hsl(0, 0%, 91%);
+    --cultured: hsl(0, 0%, 94%);
+    --white-60: hsla(0, 0%, 100%, 0.6);
+    --white-50: hsla(0, 0%, 100%, 0.5);
+    --white-10: hsla(0, 0%, 100%, 0.1);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --jet: hsl(0, 0%, 18%);
+
+    /**
+    * typography
+    */
+
+    --ff-oswald: 'Oswald', sans-serif;
+    --ff-inter: 'Inter', sans-serif;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-inter, sans-serif);
+    background-color: var(--eerie-black-1);
+    color: var(--black);
+    
+}
+
+/* .container {
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    position: fixed;
+    left: 62%;
+    top: 45%;
+    background-color: #ddf1cf;
+} */
+
+a {
+    color: hsl(0, 0%, 80%);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in;
+}
+
+p {
+    color: white;
+}
+
+.flex {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px;
+    gap: 32px;
+}
+
+.flex h3{
+    margin-bottom: 16px;
+    font-size: 32px;
+}
+
+
+.flex img {
+    max-width: 450px;
+    height: auto;
+    width: auto;
+}
+
+p1 {
+    color: white;
+}
+
+/* p {
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    position: fixed;
+    left: 50%;
+    top: 30%;
+} */
+
+/* p :hover{
+    text-decoration: brown;
+} */
+
+/* div.container h3{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+border: 1;
+    
+} */
+
+
+button {
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ff-oswald, sans-serif);
+    font-weight: 600;
+    color: white;
+    right: 90%;
+}
+
+#service-page {
+    min-height: 100dvh;
+    background-image: url(/img/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.us {
+    font-size: 5rem;
+    padding: 32px;
+}
+
+.us p {
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 64px;
+}
+
+.us p1{
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.iconic {
+    color: white;
+    cursor: wait;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header h4 {
+    font-size: 3.5rem;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    position: fixed;
+    left: 60%;
+    top: 10%;
+}
+
+nav.desktop-nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.btn-menu {
+    background: none;
+    border: 0;
+    outline: none;
+    font-size: 2rem;
+}
+
+.btn-menu:focus {
+    outline: none;
+}
+
+nav.mobile-nav {
+    display: none;
+}
+
+nav.mobile-nav.open {
+    display: block;
+}
+
+nav.mobile-nav a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease-in;
+}
+
+nav.mobile-nav a:hover {
+    background-color: var(--eerie-black-1);
+}
+
+/* Media Query */
+
+@media screen and (min-width: 370px) {
+    header nav.desktop-nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    header nav.desktop-nav {
+        display: block;
+    }
+
+    nav.mobile-nav {
+        display: none !important;
+    }
+
+    header .btn-menu {
+        display: none;
+    }
+}
